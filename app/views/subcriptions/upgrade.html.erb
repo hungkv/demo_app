@@ -1,0 +1,24 @@
+<div class="row">
+  <%= form_tag @subcriber, id: "subscription-form" do %>
+    <main class="plan-change plan-change--step-third" role="main">
+      <div class="plan-change__content">
+        <h4 class="plan-change__title">Change plan</h4>
+        <div class="plan-change__body">
+          <div class="plan-change__plan-package">
+            <h4 class="plan-package__title"><%= "#{@plan.name}¥#{@plan.price}" %></h4>
+            <p class="plan-package__description"><%= @plan.max_project %> Projects</p>
+            <p class="plan-package__description"><%= @plan.max_storage %>MB Storage</p>
+          </div>
+        </div>
+        <div class="plan-change__footer">
+          <button class="btn button button--secondary" type="button">Cancel
+          </button>
+          <button class="btn button button--primary" type="submit">Change plan
+          </button>
+        </div>
+      </div>
+    </main>
+    <%= hidden_field_tag :plan_price, @plan.price %>
+    <%= hidden_field_tag :plan_name, @plan.name %>
+  <% end %>
+</div>

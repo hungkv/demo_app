@@ -1,0 +1,13 @@
+.price__head--startup {
+    background-color: #afc5dc;
+}
+.plan__price-column {
+    display: flex;
+    width: 20%;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-bottom: 8px;
+}
+.plan__price-item {
+  background: whitesmoke !important;
+}

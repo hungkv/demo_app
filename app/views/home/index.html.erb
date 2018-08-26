@@ -1,0 +1,81 @@
+<div class="row">
+  <% Plan.all.each do |plan| %>
+  <div class="col s6 center-align">
+    <div class="blue-grey lighten-5" style="padding-bottom: 10px">
+      <div class="blue lighten-2">
+        <h5 class="price__title"><%= plan.name.upcase %></h5>
+        <h3 class="price__money">¥<%= plan.price%></h3>
+        <p class="price__include">Monthly(tax included)</p>
+      </div>
+      <div class="price__body">
+        <div class="price__upgrade">
+          <%= link_to "Change Plan", subcriptions_upgrade_path(plan_name: plan.name), class: "btn button button--primary price__button" %>
+        </div>
+        <ul class="price__detail">
+          <li class="price__item">PROJECT BOARDS</li>
+          <li class="price__item">USERS</li>
+          <li class="price__item"><%= plan.max_storage %>MB STORAGE</li>
+          <li class="price__item price__item--small"><%= plan.max_upload %>MB FILE UPLOAD (PER FILE)</li>
+          <li class="price__item">256BIT SSL SECURITY</li>
+          <li class="price__item">EXPORT CSV DATA</li>
+          <li class="price__item">iOS/Android APP</li>
+          <li class="price__item">JAPANESE・ENGLISH</li>
+          <li class="price__item">NO EMAIL SUPPORT</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  <!-- <div class="col s6 center-align">
+    <div class="blue-grey lighten-5">
+      <div class="blue lighten-2">
+        <h5 class="price__title">Free</h5>
+        <h3 class="price__money">¥0</h3>
+        <p class="price__include">Monthly(tax included)</p>
+      </div>
+      <div class="price__body">
+        <div class="price__upgrade">
+          <button class="btn button button--primary price__button" type="button">Change plan
+          </button>
+        </div>
+        <ul class="price__detail">
+          <li class="price__item">PROJECT BOARDS</li>
+          <li class="price__item">USERS</li>
+          <li class="price__item">100MB STORAGE</li>
+          <li class="price__item price__item--small">10MB FILE UPLOAD (PER FILE)</li>
+          <li class="price__item">256BIT SSL SECURITY</li>
+          <li class="price__item">EXPORT CSV DATA</li>
+          <li class="price__item">iOS/Android APP</li>
+          <li class="price__item">JAPANESE・ENGLISH</li>
+          <li class="price__item">NO EMAIL SUPPORT</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="center-align col s6">
+    <div class="plan__price-item price blue-grey lighten-5">
+      <div class="price__head price__head--professional blue lighten-2">
+        <h5 class="price__title">Professional</h5>
+        <h3 class="price__money">¥7,980</h3>
+        <p class="price__include">Monthly(tax included)</p>
+      </div>
+      <div class="price__body">
+        <div class="price__upgrade">
+          <button class="btn button button--primary price__button" type="button">Upgrade
+          </button>
+        </div>
+        <ul class="price__detail">
+          <li class="price__item">100 PROJECT BOARDS</li>
+          <li class="price__item">100 USERS</li>
+          <li class="price__item">UNLIMITED STORAGE</li>
+          <li class="price__item price__item--small">1GB FILE UPLOAD (PER FILE)</li>
+          <li class="price__item">256BIT SSL SECURITY</li>
+          <li class="price__item">40 EMOTICONS TO USE</li>
+          <li class="price__item">EXPORT CSV DATA</li>
+          <li class="price__item">iOS/Android APP</li>
+          <li class="price__item">JAPANESE・ENGLISH</li>
+        </ul>
+      </div>
+    </div>
+  </div> -->
+</div>
