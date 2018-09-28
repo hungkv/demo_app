@@ -20,7 +20,8 @@ class SubcriptionsController < ApplicationController
   end
 
   def unionpay_success
-    sale_tran_payment
+    a = sale_tran_payment
+    current_user.update_attributes(payment_at: Time.now, paid: true)
   end
 
   def sale_tran_payment

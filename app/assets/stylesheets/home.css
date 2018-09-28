@@ -11,3 +11,86 @@
 .plan__price-item {
   background: whitesmoke !important;
 }
+.plan-change {
+  display: flex;
+  padding-top: 75px; }
+  .plan-change__content {
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+    background: #fff;
+    border-radius: 8px; }
+  .plan-change__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid #d8d8d8; }
+  .plan-change__body {
+    padding: 5px 50px 0; }
+  .plan-change__body-container {
+    padding-top: 15px; }
+  .plan-change__footer {
+    display: flex;
+    justify-content: center;
+    padding: 4px 50px 20px; }
+    .plan-change__footer .button {
+      margin: 12px;
+      padding: 10px 22px;
+      width: 160px; }
+  .plan-change__title {
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-align: center;
+    color: #4a4a4a;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px; }
+  .plan-change__date {
+    align-items: center;
+    display: flex; }
+  .plan-change__select {
+    flex: 0 0 100px; }
+  .plan-change__slash {
+    color: #9b9b9b;
+    padding: 0 18px;
+    position: relative; }
+  .plan-change__security {
+    flex: 0 0 215px; }
+  .plan-change__error {
+    margin-bottom: -15px; }
+  .plan-change__image {
+    background: transparent;
+    border-radius: 8px;
+    margin: 55px auto 52px;
+    height: auto;
+    text-align: center;
+    width: auto; }
+  .plan-change__plan-package {
+    width: 314px;
+    max-width: 100%;
+    padding: 20px 40px;
+    margin: 35px auto 44px;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #d8d8d8; }
+  .plan-change__card-info {
+    margin: 10px -50px 20px;
+    padding: 0 93px 32px;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+    .plan-change__card-info button {
+      font-size: 14px; }
+  .plan-change__card-title {
+    margin-bottom: 4px;
+    color: #656873; }
+  .plan-change__card-subtitle {
+    margin-bottom: 0;
+    color: #656873;
+    font-size: 12px;
+    line-height: 1.33; }
+  .plan-change--step-first .plan-change__footer .button + .button, .plan-change--step-second .plan-change__footer .button + .button, .plan-change--step-third .plan-change__footer .button + .button {
+    width: 184px; }
+  .plan-change--complete .plan-change__title {
+    margin-top: 72px; }

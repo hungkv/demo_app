@@ -7,5 +7,8 @@ class AddSomeFields < ActiveRecord::Migration[5.0]
     add_column :users, :unionpay_token, :string
     add_column :users, :unionpay_start_url, :string
     add_column :users, :amount, :decimal, default: 0
+    add_column :users, :paid, :boolean, default: false
+    add_column :users, :payment_at, :datetime
+    add_column :users, :plan_name, :string
   end
 end
